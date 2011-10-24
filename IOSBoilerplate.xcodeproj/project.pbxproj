@@ -77,6 +77,8 @@
 		09E442DA141F9DD400AD2DAE /* SwipeableTableViewExample.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09E442D8141F9DD400AD2DAE /* SwipeableTableViewExample.xib */; };
 		09E442DD141F9E3600AD2DAE /* SwipeableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E442DC141F9E3600AD2DAE /* SwipeableCell.m */; };
 		C37BC8E4144C340600423D44 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C37BC8E3144C340600423D44 /* libz.dylib */; };
+		CF5AEEC91455FDB000A554B7 /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5AEEC81455FDB000A554B7 /* libGoogleAnalytics.a */; };
+		CF5AEECB1455FE2600A554B7 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5AEECA1455FE2600A554B7 /* libsqlite3.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -198,6 +200,9 @@
 		09E442DB141F9E3600AD2DAE /* SwipeableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeableCell.h; sourceTree = "<group>"; };
 		09E442DC141F9E3600AD2DAE /* SwipeableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeableCell.m; sourceTree = "<group>"; };
 		C37BC8E3144C340600423D44 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		CF5AEEC71455FDB000A554B7 /* GANTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GANTracker.h; sourceTree = "<group>"; };
+		CF5AEEC81455FDB000A554B7 /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalytics.a; sourceTree = "<group>"; };
+		CF5AEECA1455FE2600A554B7 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +210,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF5AEECB1455FE2600A554B7 /* libsqlite3.0.dylib in Frameworks */,
 				C37BC8E4144C340600423D44 /* libz.dylib in Frameworks */,
 				09270769141E52BB00E778AE /* CoreLocation.framework in Frameworks */,
 				0927075E141E4C7800E778AE /* MapKit.framework in Frameworks */,
@@ -215,6 +221,7 @@
 				09885EED1418F3F900CCE17A /* CFNetwork.framework in Frameworks */,
 				09885E951418F2E500CCE17A /* UIKit.framework in Frameworks */,
 				09885E971418F2E500CCE17A /* Foundation.framework in Frameworks */,
+				CF5AEEC91455FDB000A554B7 /* libGoogleAnalytics.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				C37BC8E3144C340600423D44 /* libz.dylib */,
+				CF5AEECA1455FE2600A554B7 /* libsqlite3.0.dylib */,
 				09885EEC1418F3F900CCE17A /* CFNetwork.framework */,
 				09270768141E52BB00E778AE /* CoreLocation.framework */,
 				09885E961418F2E500CCE17A /* Foundation.framework */,
@@ -272,6 +280,7 @@
 		09885E9A1418F2E600CCE17A /* IOSBoilerplate */ = {
 			isa = PBXGroup;
 			children = (
+				CF5AEEC51455FD6B00A554B7 /* GoogleAnalytics */,
 				09E442B7141F969400AD2DAE /* RefreshTableHeaderView */,
 				09885F491419027D00CCE17A /* JSONKit */,
 				09885F3E1418FFE000CCE17A /* SVProgressHUD */,
@@ -456,6 +465,15 @@
 				09E442C5141F970400AD2DAE /* whiteArrow@2x.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		CF5AEEC51455FD6B00A554B7 /* GoogleAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				CF5AEEC71455FDB000A554B7 /* GANTracker.h */,
+				CF5AEEC81455FDB000A554B7 /* libGoogleAnalytics.a */,
+			);
+			name = GoogleAnalytics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -720,6 +738,10 @@
 				GCC_PREFIX_HEADER = "IOSBoilerplate/IOSBoilerplate-Prefix.pch";
 				INFOPLIST_FILE = "IOSBoilerplate/IOSBoilerplate-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/IOSBoilerplate\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -732,6 +754,10 @@
 				GCC_PREFIX_HEADER = "IOSBoilerplate/IOSBoilerplate-Prefix.pch";
 				INFOPLIST_FILE = "IOSBoilerplate/IOSBoilerplate-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/IOSBoilerplate\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
