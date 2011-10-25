@@ -79,6 +79,7 @@
 		C37BC8E4144C340600423D44 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C37BC8E3144C340600423D44 /* libz.dylib */; };
 		CF5AEEC91455FDB000A554B7 /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5AEEC81455FDB000A554B7 /* libGoogleAnalytics.a */; };
 		CF5AEECB1455FE2600A554B7 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5AEECA1455FE2600A554B7 /* libsqlite3.0.dylib */; };
+		CF8FCB85145778D500D86145 /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCB84145778D500D86145 /* iRate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -203,6 +204,8 @@
 		CF5AEEC71455FDB000A554B7 /* GANTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GANTracker.h; sourceTree = "<group>"; };
 		CF5AEEC81455FDB000A554B7 /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalytics.a; sourceTree = "<group>"; };
 		CF5AEECA1455FE2600A554B7 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		CF8FCB83145778D500D86145 /* iRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iRate.h; sourceTree = "<group>"; };
+		CF8FCB84145778D500D86145 /* iRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iRate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +283,7 @@
 		09885E9A1418F2E600CCE17A /* IOSBoilerplate */ = {
 			isa = PBXGroup;
 			children = (
+				CF8FCB81145778BA00D86145 /* iRate */,
 				CF5AEEC51455FD6B00A554B7 /* GoogleAnalytics */,
 				09E442B7141F969400AD2DAE /* RefreshTableHeaderView */,
 				09885F491419027D00CCE17A /* JSONKit */,
@@ -476,6 +480,15 @@
 			name = GoogleAnalytics;
 			sourceTree = "<group>";
 		};
+		CF8FCB81145778BA00D86145 /* iRate */ = {
+			isa = PBXGroup;
+			children = (
+				CF8FCB83145778D500D86145 /* iRate.h */,
+				CF8FCB84145778D500D86145 /* iRate.m */,
+			);
+			name = iRate;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -631,6 +644,7 @@
 				09E442D4141F989200AD2DAE /* PullDownExample.m in Sources */,
 				09E442D9141F9DD400AD2DAE /* SwipeableTableViewExample.m in Sources */,
 				09E442DD141F9E3600AD2DAE /* SwipeableCell.m in Sources */,
+				CF8FCB85145778D500D86145 /* iRate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
