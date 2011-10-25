@@ -79,8 +79,6 @@
 		C37BC8E4144C340600423D44 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C37BC8E3144C340600423D44 /* libz.dylib */; };
 		CF5AEEC91455FDB000A554B7 /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5AEEC81455FDB000A554B7 /* libGoogleAnalytics.a */; };
 		CF5AEECB1455FE2600A554B7 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5AEECA1455FE2600A554B7 /* libsqlite3.0.dylib */; };
-		CF8FCB85145778D500D86145 /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCB84145778D500D86145 /* iRate.m */; };
-		CF8FCB8D14577B6200D86145 /* GHNSString+TimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCB8C14577B6200D86145 /* GHNSString+TimeInterval.m */; };
 		CF8FCC2C14577CA600D86145 /* SHKOAuthSharer.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCB9214577CA600D86145 /* SHKOAuthSharer.m */; };
 		CF8FCC2D14577CA600D86145 /* SHKSharer.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCB9414577CA600D86145 /* SHKSharer.m */; };
 		CF8FCC2E14577CA600D86145 /* UIWebView+SHK.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCB9714577CA600D86145 /* UIWebView+SHK.m */; };
@@ -144,6 +142,8 @@
 		CF8FCC6814577CA600D86145 /* SHKOAuthView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCC2714577CA600D86145 /* SHKOAuthView.m */; };
 		CF8FCC6914577CA600D86145 /* SHKShareMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCC2914577CA600D86145 /* SHKShareMenu.m */; };
 		CF8FCC6A14577CA600D86145 /* SHKViewControllerWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCC2B14577CA600D86145 /* SHKViewControllerWrapper.m */; };
+		CF8FCC7014577DC800D86145 /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCC6F14577DC800D86145 /* iRate.m */; };
+		CF8FCC7414577DF900D86145 /* GHNSString+TimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCC7314577DF900D86145 /* GHNSString+TimeInterval.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -268,10 +268,6 @@
 		CF5AEEC71455FDB000A554B7 /* GANTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GANTracker.h; sourceTree = "<group>"; };
 		CF5AEEC81455FDB000A554B7 /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalytics.a; sourceTree = "<group>"; };
 		CF5AEECA1455FE2600A554B7 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		CF8FCB83145778D500D86145 /* iRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iRate.h; sourceTree = "<group>"; };
-		CF8FCB84145778D500D86145 /* iRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iRate.m; sourceTree = "<group>"; };
-		CF8FCB8B14577B6200D86145 /* GHNSString+TimeInterval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GHNSString+TimeInterval.h"; sourceTree = "<group>"; };
-		CF8FCB8C14577B6200D86145 /* GHNSString+TimeInterval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GHNSString+TimeInterval.m"; sourceTree = "<group>"; };
 		CF8FCB9114577CA600D86145 /* SHKOAuthSharer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKOAuthSharer.h; sourceTree = "<group>"; };
 		CF8FCB9214577CA600D86145 /* SHKOAuthSharer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKOAuthSharer.m; sourceTree = "<group>"; };
 		CF8FCB9314577CA600D86145 /* SHKSharer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKSharer.h; sourceTree = "<group>"; };
@@ -400,6 +396,10 @@
 		CF8FCC2914577CA600D86145 /* SHKShareMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKShareMenu.m; sourceTree = "<group>"; };
 		CF8FCC2A14577CA600D86145 /* SHKViewControllerWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKViewControllerWrapper.h; sourceTree = "<group>"; };
 		CF8FCC2B14577CA600D86145 /* SHKViewControllerWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKViewControllerWrapper.m; sourceTree = "<group>"; };
+		CF8FCC6E14577DC800D86145 /* iRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iRate.h; sourceTree = "<group>"; };
+		CF8FCC6F14577DC800D86145 /* iRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iRate.m; sourceTree = "<group>"; };
+		CF8FCC7214577DF900D86145 /* GHNSString+TimeInterval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GHNSString+TimeInterval.h"; sourceTree = "<group>"; };
+		CF8FCC7314577DF900D86145 /* GHNSString+TimeInterval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GHNSString+TimeInterval.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -477,9 +477,9 @@
 		09885E9A1418F2E600CCE17A /* IOSBoilerplate */ = {
 			isa = PBXGroup;
 			children = (
+				CF8FCC7114577DF900D86145 /* GHKit */,
+				CF8FCC6D14577DC800D86145 /* iRate */,
 				CF8FCB8E14577CA600D86145 /* ShareKit */,
-				CF8FCB8A14577B4E00D86145 /* GHKit */,
-				CF8FCB81145778BA00D86145 /* iRate */,
 				CF5AEEC51455FD6B00A554B7 /* GoogleAnalytics */,
 				09E442B7141F969400AD2DAE /* RefreshTableHeaderView */,
 				09885F491419027D00CCE17A /* JSONKit */,
@@ -674,24 +674,6 @@
 				CF5AEEC81455FDB000A554B7 /* libGoogleAnalytics.a */,
 			);
 			name = GoogleAnalytics;
-			sourceTree = "<group>";
-		};
-		CF8FCB81145778BA00D86145 /* iRate */ = {
-			isa = PBXGroup;
-			children = (
-				CF8FCB83145778D500D86145 /* iRate.h */,
-				CF8FCB84145778D500D86145 /* iRate.m */,
-			);
-			name = iRate;
-			sourceTree = "<group>";
-		};
-		CF8FCB8A14577B4E00D86145 /* GHKit */ = {
-			isa = PBXGroup;
-			children = (
-				CF8FCB8B14577B6200D86145 /* GHNSString+TimeInterval.h */,
-				CF8FCB8C14577B6200D86145 /* GHNSString+TimeInterval.m */,
-			);
-			name = GHKit;
 			sourceTree = "<group>";
 		};
 		CF8FCB8E14577CA600D86145 /* ShareKit */ = {
@@ -1052,6 +1034,24 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		CF8FCC6D14577DC800D86145 /* iRate */ = {
+			isa = PBXGroup;
+			children = (
+				CF8FCC6E14577DC800D86145 /* iRate.h */,
+				CF8FCC6F14577DC800D86145 /* iRate.m */,
+			);
+			path = iRate;
+			sourceTree = "<group>";
+		};
+		CF8FCC7114577DF900D86145 /* GHKit */ = {
+			isa = PBXGroup;
+			children = (
+				CF8FCC7214577DF900D86145 /* GHNSString+TimeInterval.h */,
+				CF8FCC7314577DF900D86145 /* GHNSString+TimeInterval.m */,
+			);
+			path = GHKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1211,8 +1211,6 @@
 				09E442D4141F989200AD2DAE /* PullDownExample.m in Sources */,
 				09E442D9141F9DD400AD2DAE /* SwipeableTableViewExample.m in Sources */,
 				09E442DD141F9E3600AD2DAE /* SwipeableCell.m in Sources */,
-				CF8FCB85145778D500D86145 /* iRate.m in Sources */,
-				CF8FCB8D14577B6200D86145 /* GHNSString+TimeInterval.m in Sources */,
 				CF8FCC2C14577CA600D86145 /* SHKOAuthSharer.m in Sources */,
 				CF8FCC2D14577CA600D86145 /* SHKSharer.m in Sources */,
 				CF8FCC2E14577CA600D86145 /* UIWebView+SHK.m in Sources */,
@@ -1273,6 +1271,8 @@
 				CF8FCC6814577CA600D86145 /* SHKOAuthView.m in Sources */,
 				CF8FCC6914577CA600D86145 /* SHKShareMenu.m in Sources */,
 				CF8FCC6A14577CA600D86145 /* SHKViewControllerWrapper.m in Sources */,
+				CF8FCC7014577DC800D86145 /* iRate.m in Sources */,
+				CF8FCC7414577DF900D86145 /* GHNSString+TimeInterval.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
