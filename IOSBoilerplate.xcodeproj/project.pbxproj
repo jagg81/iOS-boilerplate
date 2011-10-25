@@ -80,6 +80,7 @@
 		CF5AEEC91455FDB000A554B7 /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5AEEC81455FDB000A554B7 /* libGoogleAnalytics.a */; };
 		CF5AEECB1455FE2600A554B7 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5AEECA1455FE2600A554B7 /* libsqlite3.0.dylib */; };
 		CF8FCB85145778D500D86145 /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCB84145778D500D86145 /* iRate.m */; };
+		CF8FCB8D14577B6200D86145 /* GHNSString+TimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCB8C14577B6200D86145 /* GHNSString+TimeInterval.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -206,6 +207,8 @@
 		CF5AEECA1455FE2600A554B7 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		CF8FCB83145778D500D86145 /* iRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iRate.h; sourceTree = "<group>"; };
 		CF8FCB84145778D500D86145 /* iRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iRate.m; sourceTree = "<group>"; };
+		CF8FCB8B14577B6200D86145 /* GHNSString+TimeInterval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GHNSString+TimeInterval.h"; sourceTree = "<group>"; };
+		CF8FCB8C14577B6200D86145 /* GHNSString+TimeInterval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GHNSString+TimeInterval.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +286,7 @@
 		09885E9A1418F2E600CCE17A /* IOSBoilerplate */ = {
 			isa = PBXGroup;
 			children = (
+				CF8FCB8A14577B4E00D86145 /* GHKit */,
 				CF8FCB81145778BA00D86145 /* iRate */,
 				CF5AEEC51455FD6B00A554B7 /* GoogleAnalytics */,
 				09E442B7141F969400AD2DAE /* RefreshTableHeaderView */,
@@ -489,6 +493,15 @@
 			name = iRate;
 			sourceTree = "<group>";
 		};
+		CF8FCB8A14577B4E00D86145 /* GHKit */ = {
+			isa = PBXGroup;
+			children = (
+				CF8FCB8B14577B6200D86145 /* GHNSString+TimeInterval.h */,
+				CF8FCB8C14577B6200D86145 /* GHNSString+TimeInterval.m */,
+			);
+			name = GHKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -645,6 +658,7 @@
 				09E442D9141F9DD400AD2DAE /* SwipeableTableViewExample.m in Sources */,
 				09E442DD141F9E3600AD2DAE /* SwipeableCell.m in Sources */,
 				CF8FCB85145778D500D86145 /* iRate.m in Sources */,
+				CF8FCB8D14577B6200D86145 /* GHNSString+TimeInterval.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
