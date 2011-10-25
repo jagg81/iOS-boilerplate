@@ -108,7 +108,6 @@
 		CF8FCC4614577CA600D86145 /* SHKCustomShareMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCBCE14577CA600D86145 /* SHKCustomShareMenu.m */; };
 		CF8FCC4714577CA600D86145 /* SHKCustomShareMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCBD014577CA600D86145 /* SHKCustomShareMenuCell.m */; };
 		CF8FCC4814577CA600D86145 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF8FCBD214577CA600D86145 /* Localizable.strings */; };
-		CF8FCC4914577CA600D86145 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCBD714577CA600D86145 /* Reachability.m */; };
 		CF8FCC4A14577CA600D86145 /* SHKCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCBDC14577CA600D86145 /* SHKCopy.m */; };
 		CF8FCC4B14577CA600D86145 /* SHKMail.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCBDF14577CA600D86145 /* SHKMail.m */; };
 		CF8FCC4C14577CA600D86145 /* SHKSafari.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCBE214577CA600D86145 /* SHKSafari.m */; };
@@ -144,6 +143,8 @@
 		CF8FCC6A14577CA600D86145 /* SHKViewControllerWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCC2B14577CA600D86145 /* SHKViewControllerWrapper.m */; };
 		CF8FCC7014577DC800D86145 /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCC6F14577DC800D86145 /* iRate.m */; };
 		CF8FCC7414577DF900D86145 /* GHNSString+TimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCC7314577DF900D86145 /* GHNSString+TimeInterval.m */; };
+		CF8FCC88145780EB00D86145 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8FCC87145780EB00D86145 /* Security.framework */; };
+		CF8FCC8A145780F200D86145 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8FCC89145780F200D86145 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -327,8 +328,6 @@
 		CF8FCBD014577CA600D86145 /* SHKCustomShareMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKCustomShareMenuCell.m; sourceTree = "<group>"; };
 		CF8FCBD314577CA600D86145 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CF8FCBD414577CA600D86145 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		CF8FCBD614577CA600D86145 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		CF8FCBD714577CA600D86145 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		CF8FCBDB14577CA600D86145 /* SHKCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKCopy.h; sourceTree = "<group>"; };
 		CF8FCBDC14577CA600D86145 /* SHKCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKCopy.m; sourceTree = "<group>"; };
 		CF8FCBDE14577CA600D86145 /* SHKMail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKMail.h; sourceTree = "<group>"; };
@@ -400,6 +399,8 @@
 		CF8FCC6F14577DC800D86145 /* iRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iRate.m; sourceTree = "<group>"; };
 		CF8FCC7214577DF900D86145 /* GHNSString+TimeInterval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GHNSString+TimeInterval.h"; sourceTree = "<group>"; };
 		CF8FCC7314577DF900D86145 /* GHNSString+TimeInterval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GHNSString+TimeInterval.m"; sourceTree = "<group>"; };
+		CF8FCC87145780EB00D86145 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CF8FCC89145780F200D86145 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -407,6 +408,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF8FCC8A145780F200D86145 /* MessageUI.framework in Frameworks */,
+				CF8FCC88145780EB00D86145 /* Security.framework in Frameworks */,
+				09885EEF1418F40200CCE17A /* SystemConfiguration.framework in Frameworks */,
 				CF5AEECB1455FE2600A554B7 /* libsqlite3.0.dylib in Frameworks */,
 				C37BC8E4144C340600423D44 /* libz.dylib in Frameworks */,
 				09270769141E52BB00E778AE /* CoreLocation.framework in Frameworks */,
@@ -414,7 +418,6 @@
 				09885F451419009200CCE17A /* QuartzCore.framework in Frameworks */,
 				09885EF21418F44200CCE17A /* MobileCoreServices.framework in Frameworks */,
 				09885E991418F2E600CCE17A /* CoreGraphics.framework in Frameworks */,
-				09885EEF1418F40200CCE17A /* SystemConfiguration.framework in Frameworks */,
 				09885EED1418F3F900CCE17A /* CFNetwork.framework in Frameworks */,
 				09885E951418F2E500CCE17A /* UIKit.framework in Frameworks */,
 				09885E971418F2E500CCE17A /* Foundation.framework in Frameworks */,
@@ -439,6 +442,8 @@
 		09885E851418F2E500CCE17A = {
 			isa = PBXGroup;
 			children = (
+				CF8FCC89145780F200D86145 /* MessageUI.framework */,
+				CF8FCC87145780EB00D86145 /* Security.framework */,
 				09885E9A1418F2E600CCE17A /* IOSBoilerplate */,
 				09885EBC1418F2E600CCE17A /* IOSBoilerplateTests */,
 				09885E931418F2E500CCE17A /* Frameworks */,
@@ -682,7 +687,6 @@
 				CF8FCB8F14577CA600D86145 /* Core */,
 				CF8FCBC814577CA600D86145 /* Customize UI */,
 				CF8FCBD114577CA600D86145 /* Localization */,
-				CF8FCBD514577CA600D86145 /* Reachability */,
 				CF8FCBD814577CA600D86145 /* Sharers */,
 				CF8FCC1A14577CA600D86145 /* SHKConfig.h */,
 				CF8FCC1B14577CA600D86145 /* UI */,
@@ -823,15 +827,6 @@
 				CF8FCBD214577CA600D86145 /* Localizable.strings */,
 			);
 			path = Localization;
-			sourceTree = "<group>";
-		};
-		CF8FCBD514577CA600D86145 /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-				CF8FCBD614577CA600D86145 /* Reachability.h */,
-				CF8FCBD714577CA600D86145 /* Reachability.m */,
-			);
-			path = Reachability;
 			sourceTree = "<group>";
 		};
 		CF8FCBD814577CA600D86145 /* Sharers */ = {
@@ -1238,7 +1233,6 @@
 				CF8FCC4514577CA600D86145 /* SHKCustomFormFieldCell.m in Sources */,
 				CF8FCC4614577CA600D86145 /* SHKCustomShareMenu.m in Sources */,
 				CF8FCC4714577CA600D86145 /* SHKCustomShareMenuCell.m in Sources */,
-				CF8FCC4914577CA600D86145 /* Reachability.m in Sources */,
 				CF8FCC4A14577CA600D86145 /* SHKCopy.m in Sources */,
 				CF8FCC4B14577CA600D86145 /* SHKMail.m in Sources */,
 				CF8FCC4C14577CA600D86145 /* SHKSafari.m in Sources */,
