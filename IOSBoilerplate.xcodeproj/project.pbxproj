@@ -1144,6 +1144,9 @@
 /* Begin PBXProject section */
 		09885E871418F2E500CCE17A /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = 09885E8A1418F2E500CCE17A /* Build configuration list for PBXProject "IOSBoilerplate" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -1437,6 +1440,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IOSBoilerplate/IOSBoilerplate-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "IOSBoilerplate/IOSBoilerplate-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = (
@@ -1453,6 +1457,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IOSBoilerplate/IOSBoilerplate-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "IOSBoilerplate/IOSBoilerplate-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = (
@@ -1474,6 +1479,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IOSBoilerplate/IOSBoilerplate-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "IOSBoilerplateTests/IOSBoilerplateTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -1491,6 +1497,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IOSBoilerplate/IOSBoilerplate-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "IOSBoilerplateTests/IOSBoilerplateTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
