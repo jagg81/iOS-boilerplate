@@ -28,6 +28,7 @@
 
 #import "IOSBoilerplateAppDelegate.h"
 #import "ImageManager.h"
+#import "AppManager.h"
 
 @implementation IOSBoilerplateAppDelegate
 
@@ -40,6 +41,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // init AppManager
+    // AppManager *appManager = [AppManager shareAppManager];
+    
     // Override point for customization after application launch.
     // Add the navigation controller's view to the window and display.
     self.window.rootViewController = self.navigationController;

@@ -145,6 +145,9 @@
 		CF8FCC7414577DF900D86145 /* GHNSString+TimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCC7314577DF900D86145 /* GHNSString+TimeInterval.m */; };
 		CF8FCC88145780EB00D86145 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8FCC87145780EB00D86145 /* Security.framework */; };
 		CF8FCC8A145780F200D86145 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8FCC89145780F200D86145 /* MessageUI.framework */; };
+		CF8FCCA11457852400D86145 /* AppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCC9E1457852400D86145 /* AppManager.m */; };
+		CF8FCCA71457856800D86145 /* RequestLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCCA41457856800D86145 /* RequestLoader.m */; };
+		CF8FCCA81457856800D86145 /* ResponseLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FCCA61457856800D86145 /* ResponseLoader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -401,6 +404,15 @@
 		CF8FCC7314577DF900D86145 /* GHNSString+TimeInterval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GHNSString+TimeInterval.m"; sourceTree = "<group>"; };
 		CF8FCC87145780EB00D86145 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		CF8FCC89145780F200D86145 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		CF8FCC9C1457852400D86145 /* AppAuthenticationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppAuthenticationDelegate.h; sourceTree = "<group>"; };
+		CF8FCC9D1457852400D86145 /* AppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppManager.h; sourceTree = "<group>"; };
+		CF8FCC9E1457852400D86145 /* AppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppManager.m; sourceTree = "<group>"; };
+		CF8FCC9F1457852400D86145 /* AppPreprocessorMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppPreprocessorMacros.h; sourceTree = "<group>"; };
+		CF8FCCA01457852400D86145 /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		CF8FCCA31457856800D86145 /* RequestLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestLoader.h; sourceTree = "<group>"; };
+		CF8FCCA41457856800D86145 /* RequestLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestLoader.m; sourceTree = "<group>"; };
+		CF8FCCA51457856800D86145 /* ResponseLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseLoader.h; sourceTree = "<group>"; };
+		CF8FCCA61457856800D86145 /* ResponseLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseLoader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -442,6 +454,7 @@
 		09885E851418F2E500CCE17A = {
 			isa = PBXGroup;
 			children = (
+				CF8FCC99145784C900D86145 /* Classes */,
 				CF8FCC89145780F200D86145 /* MessageUI.framework */,
 				CF8FCC87145780EB00D86145 /* Security.framework */,
 				09885E9A1418F2E600CCE17A /* IOSBoilerplate */,
@@ -1047,6 +1060,46 @@
 			path = GHKit;
 			sourceTree = "<group>";
 		};
+		CF8FCC99145784C900D86145 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CF8FCC9B145784F500D86145 /* Helpers */,
+				CF8FCC9A145784D400D86145 /* Managers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		CF8FCC9A145784D400D86145 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CF8FCC9C1457852400D86145 /* AppAuthenticationDelegate.h */,
+				CF8FCC9D1457852400D86145 /* AppManager.h */,
+				CF8FCC9E1457852400D86145 /* AppManager.m */,
+				CF8FCC9F1457852400D86145 /* AppPreprocessorMacros.h */,
+				CF8FCCA01457852400D86145 /* Global.h */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		CF8FCC9B145784F500D86145 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CF8FCCA21457853200D86145 /* ASIIHTTP wrappers */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		CF8FCCA21457853200D86145 /* ASIIHTTP wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				CF8FCCA31457856800D86145 /* RequestLoader.h */,
+				CF8FCCA41457856800D86145 /* RequestLoader.m */,
+				CF8FCCA51457856800D86145 /* ResponseLoader.h */,
+				CF8FCCA61457856800D86145 /* ResponseLoader.m */,
+			);
+			name = "ASIIHTTP wrappers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1267,6 +1320,9 @@
 				CF8FCC6A14577CA600D86145 /* SHKViewControllerWrapper.m in Sources */,
 				CF8FCC7014577DC800D86145 /* iRate.m in Sources */,
 				CF8FCC7414577DF900D86145 /* GHNSString+TimeInterval.m in Sources */,
+				CF8FCCA11457852400D86145 /* AppManager.m in Sources */,
+				CF8FCCA71457856800D86145 /* RequestLoader.m in Sources */,
+				CF8FCCA81457856800D86145 /* ResponseLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
